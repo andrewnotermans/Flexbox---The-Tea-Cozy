@@ -9,7 +9,7 @@ body{
 }
 
 .wrap{
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -48,13 +48,23 @@ a {
     color: seashell;
 }
 
+section{
+    margin-bottom: 80px;
+}
 .flexbox{
     display: flex;
     justify-content: space-around;
+    align-content: center;
     flex-wrap: wrap;
+    width: 100%;
 }
-
-.flexbox--location-background, .flexbox--mission-background{
+.flexbox--col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.mission-background{
     
     margin: 0 auto;    
     background-repeat: no-repeat;
@@ -63,35 +73,47 @@ a {
     justify-content: center;
 }
 
-.flexbox--mission-background .flexbox_items {
+.mission-background .flexbox_items {
     background-color: black;
     display: inline;
     width: 100%;
     
 }
 
-.flexbox--location-background .flexbox_items{
+.location-background .flexbox_items{
     background-color: black;
-    margin: 15px 20px 0 20px;
+    margin: 15px;
     width: 300px;
 }
 
-.flexbox--mission-background{
+.mission-background{
     background-image: url('../img/img-mission-background.jpg');
     height: 700px;
 }
 
-.flexbox--location-background{
+.location-background{
     background-image: url('../img/img-locations-background.jpg');
     height: 500px;    
+    
 }
-
 
 
 .flexbox_items img{
     width: 300px;
     height: 200px;
     margin: 10px 0;
+}
+
+footer{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.copyright{
+    text-align: left;
+    margin: 0 0 0 15px;
 }
 
 
